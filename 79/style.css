@@ -53,6 +53,7 @@ button {
 
 
 #btn-complete{
+    font-size: 13px;
     color: green;
     padding: 7px 10px ;
     border: 1px solid green;
@@ -60,6 +61,7 @@ button {
 }
 
 #btn-delete{
+    font-size: 13px;
     color: red;
     padding: 7px 10px ;
     border: 1px solid red;
@@ -76,9 +78,6 @@ button {
     color: white;
 }
 
-
-
-
 #task-box h1 {
     text-align: left;
     color: rgb(228, 148, 0);
@@ -88,8 +87,6 @@ button {
 
 #task-box p {
     color: white;
-
-
 }
 
 #btn-box {
@@ -99,4 +96,19 @@ button {
 
 #item-box:hover {
     background-color: black;
+}
+
+.remove {
+    /* background-color: red; */
+    /* color: black; */
+    visibility: hidden;
+}
+
+.checked{
+    text-decoration-color: red;
+    text-decoration-line: line-through;
+}
+
+.change-btn {
+    font-size: 13px;
 }

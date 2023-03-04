@@ -1,38 +1,14 @@
-<!DOCTYPE html>
-<head>
-    <title>get data from form in JS</title>
-
-</head>
-
-<body style="background-color: blueviolet; font-size: 18px;" >
-
-    <div style="text-align: center; margin-top: 230px; background-color: cornflowerblue; " >
-        <form action="POST" style="padding: 20px;" >
-
-            <label>First Name</label>
-            <br/>
-            <input type="text" id="firstName" style="margin: 15px;" />
-            <br/>
-            <br/>
-            <label>Last Name</label>
-            <br/>
-            <input type="text" id="lasttName" style="margin: 15px;" />
-            <br/>
-            <br/>
-            <input type="button" onclick="show()" value="click to SHOW"  style="margin: 15px;" />
-        </form>
-
-    </div>
-
-    <script>
-        function show()
-        {
-            var firstName = document.getElementById("firstName").value ;   
-            var lasttName = document.getElementById("lasttName").value ;   
-
-            alert(`First Name is ${firstName} \nLast Name is ${lasttName}`)
-        }
-    </script>
-</body>
-
-</html>
+<form name="selectForm">
+    <label for="musicTypes"
+      >Choose some music types, then click the button below:</label
+    >
+    <select id="musicTypes" name="musicTypes" multiple>
+      <option selected>R&B</option>
+      <option>Jazz</option>
+      <option>Blues</option>
+      <option>New Age</option>
+      <option>Classical</option>
+      <option>Opera</option>
+    </select>
+    <button id="btn" type="button">How many are selected?</button>
+  </form>

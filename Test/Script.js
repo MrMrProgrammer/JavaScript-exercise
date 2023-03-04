@@ -1,7 +1,16 @@
-function show()
-{
-    var firstName = document.getElementById("firstName").value ;   
-    var lasttName = document.getElementById("lasttName").value ;   
-
-    alert(`First Name is ${firstName} \nLast Name is ${lasttName}`)
-}
+function countSelected(selectObject) {
+    let numberSelected = 0;
+    for (let i = 0; i < selectObject.options.length; i++) {
+      if (selectObject.options[i].selected) {
+        numberSelected++;
+      }
+    }
+    return numberSelected;
+  }
+  
+  const btn = document.getElementById("btn");
+  
+  btn.addEventListener("click", () => {
+    const musicTypes = document.selectForm.musicTypes;
+    console.log(`You have selected ${countSelected(musicTypes)} option(s).`);
+  });

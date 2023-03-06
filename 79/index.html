@@ -26,14 +26,14 @@
                     
                     <label>Name</label>
                     <br/>
-                    <input type="text" />
+                    <input type="text" id="name"/>
 
                 </div>
 
                 <div class="col-md-4" >
                     <label>Description</label>
                     <br/>
-                    <input type="text" />
+                    <input type="text" id="des"/>
 
                 </div>
 
@@ -42,7 +42,7 @@
                     <div class="col-md-4"></div>
                     <div class="col-md-3"></div>
                     <div class="col-md-5">
-                        <button id="button-add">Add Todo</button>
+                        <button id="button-add" onclick="addItem()">Add Todo</button>
                     </div>
 
 
@@ -62,13 +62,13 @@
                 </div>
 
                 <div class="col-md-3" id="btn-box" >
-                    <button id="btn-delete" >Delete</button>
-                    <button id="btn-complete">Complete</button>
+                    <button id="btn-delete" onclick="isOrNot()">Delete&nbsp;</button>
+                    <button id="btn-complete" onclick="check()">Complete</button> 
                 </div>
             </div>
         </div>
         
-        <div class="box"  id="item-box" >
+        <!-- <div class="box"  id="item-box" >
             <div class="row">
                 <div class="col-md-9" id="task-box" >
                     <h1>Task 2</h1>
@@ -105,11 +105,11 @@
                 </div>
 
                 <div class="col-md-3" id="btn-box" >
-                    <button id="btn-delete" >Delete</button>
-                    <button id="btn-complete">Complete</button>
+                    <button id="btn-delete">Delete</button>
+                    <button id="btn-complete" onclick="remove()">Complete</button>
                 </div>
             </div>
-        </div>
+        </div> -->
 
 
         <br/>
@@ -120,7 +120,7 @@
 
 
 
-    <!-- <script src="Script.js" ></script> -->
+    <script src="Script.js" ></script>
     
 
 </body>

@@ -1,17 +1,17 @@
-var todoList = [
-    { id : 1 , title : "learn HTML" , status : true },
-    { id : 2 , title : "learn CSS" , status : true },
-    { id : 3 , title : "learn JS" , status : false },
-    { id : 4 , title : "learn Django" , status : false },
+var x = [
+    { number : 1 },
+    { number : 2 },
+    { number : 3 },
+    { number : 4 },
+    { number : 5 },
+    { number : 6 },
+    { number : 7 }
 ]
 
-var test = [
-    { id : 5}
-]
-
-// test = todoList
-
-todoList = test
+x.forEach(function(item)
+{
+    item.number = 30
+})
 
 
-console.log(todoList)
+console.log(x)
